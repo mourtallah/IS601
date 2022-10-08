@@ -1,4 +1,3 @@
-virtual_env/**
+virtual_env/**/**
 *.pyc
 .DS_Store
-is601_example_project/is601_example_project/__pycache__/settings.cpython-310.pyc
