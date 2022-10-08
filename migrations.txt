@@ -1,0 +1,38 @@
+migrations.txt
+
+Ways of migrating: 
+  
+  doing it by hand.
+A developer would write python and SQL scripts
+ that updates the database to the subsequent specifications.
+
+Django allows us to automatically migrate from one version of 
+  a databse than another.
+
+why use migrations?
+  -- what if we want to change the model
+    -- we can do it in SQL but it is error prone and can be hard
+    to reverse and maintain.
+    -- we also have the option to rebuild the DB each time.
+
+Activating Apps
+
+What Django needs to use models
+
+A model must have a table, 
+how do we get Django to make a table for model for us?
+
+-- add app that has model to the INSTALLED_APPS folder.
+  -- one of the biggest things that people forget.
+  -- the error is cryptic, so check INSTALLED_APPS first upon error
+  and install virtual-environment
+
+ONE MIGRATION
+-- make them first, then apply them. 
+-- scripts that create the database are stored in a migrations directory
+
+-- WORKFLOW
+  -- change model, make migrations, migrate.
+  -- if you have to add data when migrations occur, 
+    a python shell will open prompting you to add data.
+  -- migrate command is interactive by design.

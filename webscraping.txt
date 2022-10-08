@@ -1,0 +1,19 @@
+Webscraping -- Taking information provided by a webpage and 
+transforming it into data that can be searched and stored.
+
+HTML --> Scarper --> Parser
+  -- requests/Selenium --> Beautiful_Soup/Selenium
+
+Selenium for headless browsers 
+
+two steps, get the HTML and parse the results
+
+-- don't partse html with regex
+
+-- requests bs4 workflow; avoid selenium if you can. 
+-- Selenium is slow, can make it look like a person.
+
+-- token bucket filter
+
+-- CSS > XML selectors
+
