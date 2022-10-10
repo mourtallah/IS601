@@ -1,0 +1,13 @@
+{% extends 'example_app/base.html' %}
+{% block title %} Welcome to the Premium Shop {% endblock %}
+{% block content %}
+    <h1>This is where we show all our +$100 baked goods</h1>
+    <p>Splurg a little, why don't ya ;)</p>
+  <ul>
+    {% for baked_good in baked_goods %}
+      {% if baked_good.price > 99.99 %}
+        <li> - ${{baked_good.price}} : {{ baked_good.name }} ({{ baked_good.desc }}) </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+{% endblock %}
